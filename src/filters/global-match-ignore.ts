@@ -16,7 +16,7 @@ export function matchGlobalPattern(
       const matched = message.includes(validator);
       if (matched) return false;
     } else if (typeof validator === "function") {
-      const matched = validator(message);
+      const matched = validator(warning);
       if (matched) return false;
     } else {
       const matched = validator.test(message);
