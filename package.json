@@ -5,6 +5,9 @@
   "repository": "https://github.com/ws-node/webpack-warning-plugin.git",
   "author": "Big Mogician <sunaoran@youzan.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "webpack": "^4.0.0"
   },

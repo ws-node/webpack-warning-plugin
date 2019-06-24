@@ -13,5 +13,5 @@
     "lib": ["es5", "es2015", "es2016"],
     "outDir": "./dist"
   },
-  "include": ["./scripts", "./utils", "gulpfile.ts"]
+  "include": ["scripts"]
 }
