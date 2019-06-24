@@ -1,6 +1,6 @@
 {
   "name": "@bigmogician/webpack-warning-plugin",
-  "version": "1.0.1",
+  "version": "1.0.1-rc.1561371399952",
   "main": "index.js",
   "repository": "https://github.com/ws-node/webpack-warning-plugin.git",
   "author": "Big Mogician <sunaoran@youzan.com>",
@@ -9,10 +9,12 @@
     "build": "tsc"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "webpack": "^4.0.0"
   },
   "devDependencies": {
     "@bigmogician/publisher": "^1.0.11",
+    "@types/lodash": "^4.14.134",
     "@types/node": "^12.0.10",
     "@types/webpack": "^4.4.33",
     "ts-node": "7.0.1",

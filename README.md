@@ -32,6 +32,32 @@ module.exports = {
 };
 ```
 
+### use match expression to filter warnings
+
+- default: `[]`
+
+> webpack.config.js
+
+```javascript
+const { WarningPlugin } = require("@bigmogician/webpack-warning-plugin");
+
+module.exports = {
+  plugins: [
+    new WarningPlugin({
+      rules: {
+        global: {
+          match: [
+            "not found",
+            /^module .*/gi,
+            (warning) => warning.error.message.length === 3
+          ]
+        }
+      }
+    });
+  ]
+};
+```
+
 ### use your custom tsconfig.json
 
 - default: `"tsconfig.json"`
@@ -52,7 +78,7 @@ module.exports = {
 };
 ```
 
-### ignore vue exports not found warnings
+### close the ignore filter for "vue exports not found" warnings
 
 - default: `false`
 
@@ -66,7 +92,7 @@ module.exports = {
     new WarningPlugin({
       rules: {
         vue: {
-          ignoreModuleExportNotFound: true
+          ignoreModuleExportNotFoundForTs: true
         }
       }
     });
