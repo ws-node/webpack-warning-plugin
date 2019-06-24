@@ -4,6 +4,7 @@
     "target": "es2016",
     "module": "commonjs",
     "moduleResolution": "node",
+    "declaration": true,
     "strict": true,
     "importHelpers": true,
     "esModuleInterop": true,
