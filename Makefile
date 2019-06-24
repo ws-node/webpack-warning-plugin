@@ -2,6 +2,7 @@ install:
 	yarn
 
 build:
+	rm -rf dist
 	yarn build
 	cp README.md dist/
 
