@@ -1,6 +1,6 @@
 {
   "name": "@bigmogician/webpack-warning-plugin",
-  "version": "1.0.0-rc.1561363976746",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/ws-node/webpack-warning-plugin.git",
   "author": "Big Mogician <sunaoran@youzan.com>",
